@@ -1,0 +1,17 @@
+<% include ./parstial/header.ejs %>
+<div class="w-full h-[100vh] bg-zinc-300 	flex align-center justify-center">
+  <div class="w-80 h-96 bg-white rounded-2xl px-8 py-2 mt-20 ">
+    <h1 class="font-semibold capitalize text-xl text-center mt-4 leading-8">wellcome to pinterest</h1>
+    <form action="/" method="post">
+      <input type="text" name="username" placeholder="username" class="border-2 mt-2 px-2 block leading-8 w-full"> 
+      <input type="email" name="email" placeholder="email" class="border-2 mt-2 px-2 block leading-8 w-full">
+      <input type="text" name="name" placeholder="fullname" class="border-2 mt-2 px-2 block leading-8 w-full">
+      <input type="text" name="password" placeholder="password" class="border-2 mt-2 px-2 block leading-8 w-full" required>
+      <input type="submit" value="Register Now" class="bg-red-500 w-full mt-3 text-white rounded-full leading-8">
+    </form>
+    <h4 class="text-center mt-2">Or</h4>
+    <p class="text-xs mt-3 text-center font-semibold">By continuing, you agree to Pinterest's Terms of Service; Opens a new tab and acknowledge you've read our Privacy Policy.</p>
+    <a href="/login" class=" inline-block mt-5 text-sm text-blue-700 w-full text-center">Alredy a member ? <span class="font-semibold">Login</span></a>
+  </div>
+</div>
+<% include ./parstial/footer.ejs %>

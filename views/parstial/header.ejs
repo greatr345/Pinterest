@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+</html>
+  <% if(nav === true){ %>
+    <div class="h-20 w-full bg-zinc-500 text-white flex justify-between">
+      <h1 class="flex mx-10 items-center">pintrest</h1>
+      <div class="menu mx-10 flex items-center ">
+        <ul class=" flex gap-10 flex items-center ">
+          <a href="/profile">Profile</a>
+          <a href="/feed">Feed</a>
+          <a href="/logout" class="bg-red-600 h-10 w-20 flex items-center justify-center rounded-lg">Logout</a>
+    
+        </ul>
+      </div>
+    </div>
+<% } %>
+  

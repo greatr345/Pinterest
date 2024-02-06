@@ -1,0 +1,13 @@
+<% include ./parstial/header.ejs %>
+<div class="w-full h-screen text-white flex p-10 bg-zinc-700 flex-wrap">
+    <% user.Posts.forEach(function (elem){ %>
+        <div class="cards flex gap-5">
+            <div class="card w-full">
+                <div class="h-20 w-[150px] mt-4 ml-3 bg-zinc-100 rounded-lg overflow-hidden">
+                  <img src="/images/uploades/<%=elem.Image %>" class="h-full w-full object-fit" alt="">
+                </div>
+                <p class="text-center"><%=elem.title%></p>
+        </div>
+    <% })%>
+</div>
+<% include ./parstial/footer.ejs %>

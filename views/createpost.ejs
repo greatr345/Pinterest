@@ -1,0 +1,12 @@
+<% include ./parstial/header.ejs %>
+<div class="create h-screen w-full bg-zinc-700 text-white px-4 py-4">
+    <h1 class="mt-4 uppercase text-xl">Create Post</h1>
+    <hr class="w-full mt-2">
+    <form action="/createpost" method="post" enctype="multipart/form-data" class="h-96 w-full flex items-center justify-center flex-col gap-5">
+        <input type="file" name="postImage" >
+        <input type="text" placeholder="Titile" class="rounded-lg p-2 text-black" name="title">
+        <textarea name="description" placeholder="Description" class="h-40 w-80 text-black rounded-lg p-3" cols="30" rows="10"></textarea>
+        <input type="submit" class="h-10 w-60 bg-red-600 rounded-full">
+    </form>
+</div>
+<% include ./parstial/footer.ejs %>
